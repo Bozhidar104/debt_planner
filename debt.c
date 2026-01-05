@@ -459,7 +459,7 @@ void removeDebt() {
     while (fscanf(file, "%s %s %f %f", d.id, d.name, &d.total, &d.remaining) == 4) {
         
         if (strcmp(d.id, userID) == 0) {
-            printf("\nОткрит е заем на име: %s (%.2f €)\n", d.name, d.total);
+            printf("\nОткрит е заем на име: %s (%.2f €)\n", d.name, d.remaining);
             continue;
         }
 
